@@ -1,0 +1,107 @@
+{
+    "families": [
+        {
+            "family_name": "Karunathilaka",
+            "uid": "0x1"
+        },
+        {
+            "family_name": "Kulasinghe",
+            "uid": "0x2"
+        },
+
+        {
+            "family_name": "Hewage",
+            "uid": "0x3"
+        }
+
+    ],
+    "members": [
+        {
+            "uid": "0x1",
+            "family_id": "0x1",
+            "name": "Ushan Karunathilaka",
+            "date_of_birth": "1997-05-18",
+            "profession": "Electrical Engineer",
+            "parents": {
+                "father": "0x2",
+                "mother": "0x3"
+            },
+            "deceased": false,
+            "children": [],
+            "spouse": null,
+            "gender": "Male",
+            "height": 1.5,
+            "weight": 51
+        },
+        {
+            "uid": "0x2",
+            "family_id": "0x1",
+            "name": "Kamal Kulasinghe",
+            "date_of_birth": "1970-08-22",
+            "profession": "Teacher",
+            "parents": null,
+            "deceased": true,
+            "children": [
+                "0x1",
+                "ox4",
+                "0x5"
+            ],
+            "spouse": "0x3",
+            "gender": "Male",
+            "height": 1.7,
+            "weight": 59
+        },
+        {
+            "uid": "0x3",
+            "family_id": "0x2",
+            "name": "Damayanthi Hewage",
+            "date_of_birth": "1971-08-10",
+            "profession": "Teacher",
+            "parents": null,
+            "deceased": false,
+            "children": [
+                "0x1",
+                "0x4",
+                "0x5"
+            ],
+            "spouse": "0x2",
+            "gender": "Female",
+            "height": 1.8,
+            "weight": 56
+        },
+        {
+            "uid": "0x4",
+            "family_id": "0x1",
+            "name": "Kavindi Karunathilaka",
+            "date_of_birth": "1996-07-18",
+            "profession": "Doctor",
+            "parents": {
+                "father": "0x2",
+                "mother": "0x3"
+            },
+            "deceased": false,
+            "children": [],
+            "spouse": null,
+            "gender": "Female",
+            "height": 1.9,
+            "weight": 50
+        },
+        {
+            "uid": "0x5",
+            "family_id": "0x1",
+            "name": "Tharindu Karunathilaka",
+            "date_of_birth": "1997-08-27",
+            "profession": "Student",
+            "parents": {
+                "father": "0x2",
+                "mother": "0x3"
+            },
+            "deceased": false,
+            "children": [],
+            "spouse": null,
+            "gender": "Male",
+            "height": 1.8,
+            "weight": 66
+        }
+    ]
+}

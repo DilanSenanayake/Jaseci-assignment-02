@@ -15,27 +15,16 @@ node person {
     has parents;
     has children;
     has spouse;
+    has height;
+    has weight;
+    has BMI;
+    
 
-    has age;
-    has days_to_birthday;
-
-    can get_age {
-        today_date = date.date_now();
-        difference = date.date_day_diff(start_date=date_of_birth, end_date=today_date);
-        age = difference / 365;
+    can get_BMI{
+        BMI = weight/(height*height)
     }
+    
 
-    can get_days_to_birthday {
-        today_date = date.date_now();
-        today_year = today_date.str::split('-')[0];
-        birthdate_split = date_of_birth.str::split('-');
-        birth_month = birthdate_split[1];
-        birth_day = birthdate_split[2];
-        birthday = '-'.str::join([today_year, birth_month, birth_day]);
-        difference = date.date_day_diff(start_date=today_date, end_date=birthday);
-        if (difference < 0) : difference = difference + 365;
-        days_to_birthday = difference;
-    }
 }
 node family_root {
     has id;

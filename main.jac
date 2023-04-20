@@ -36,7 +36,12 @@ walker create_familytree {
                 deceased = member["deceased"],
                 parents = member["parents"],
                 children = member["children"],
-                spouse = member["spouse"]
+                spouse = member["spouse"],
+                weight = member["weight"]
+                height = member["height"]
+
+                
+
             );
             famly_members.list::append(family_member);
         }
@@ -55,24 +60,25 @@ walker create_familytree {
     }
 }
 
-walker find_coming_birthday {
-    // returns the upcoming birthdays of the family
-    has max_return = 5;
-    has anchor birthday_order = [];
+
+
+
+walker find_BMI_value {
+
+    has anchor BMIlist = [];
 
     root: take-->node::family_root;
     family_root: take-->node::person;
+
     person {
-        if (!here.deceased) {
-            here::get_days_to_birthday;
-            here::get_age;
-            birthday_order.l::append([here.days_to_birthday, here.age, here.name]);
+        here::get_BMI;
+        BMIlist.l::append([here.BMI, here.name]);         
         }
-    }
+
     with exit {
-        birthday_order = std.sort_by_col(birthday_order, 0);
-        birthday_order = birthday_order[0:max_return];
-        std.out(birthday_order);
-        report birthday_order;
+        std.out(BMIlist);
+        report BMIlist;
     }
+
+
 }
