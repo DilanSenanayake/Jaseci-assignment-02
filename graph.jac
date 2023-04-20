@@ -1,4 +1,4 @@
-// Edges
+// Edges:
 edge married;
 edge child;
 edge member;
