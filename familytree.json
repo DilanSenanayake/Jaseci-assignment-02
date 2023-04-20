@@ -1,0 +1,104 @@
+{
+    "families": [
+        {
+            "family_name": "Karunathilaka",
+            "uid": "0x1"
+        },
+        {
+            "family_name": "Kulasinghe",
+            "uid": "0x2"
+        },
+
+        {
+            "family_name": "Hewage",
+            "uid": "0x3"
+        }
+
+    ],
+    "members": [
+        {
+            "uid": "0x1",
+            "family_id": "0x1",
+            "name": "Ushan Karunathilaka",
+            "date_of_birth": "1996-02-10",
+            "profession": "Software Engineer",
+            "parents": {
+                "father": "0x2",
+                "mother": "0x3"
+            },
+            "deceased": false,
+            "children": [],
+            "spouse": null,
+            "gender": "Male",
+            "hometown": "Kaluthara",
+            "height": 1.5,
+            "weight": 51
+        },
+        {
+            "uid": "0x2",
+            "family_id": "0x1",
+            "name": "Sanjaya Rathnayaka",
+            "date_of_birth": "1966-02-10",
+            "profession": "Teacher",
+            "parents": null,
+            "deceased": true,
+            "children": [
+                "0x1",
+                "ox4",
+                "0x5"
+            ],
+            "spouse": "0x3",
+            "gender": "Male",
+            "hometown": "Gampaha"
+        },
+        {
+            "uid": "0x3",
+            "family_id": "0x2",
+            "name": "Dimanthi Samarasinghe",
+            "date_of_birth": "1966-02-10",
+            "profession": "Teacher",
+            "parents": null,
+            "deceased": false,
+            "children": [
+                "0x1",
+                "0x4",
+                "0x5"
+            ],
+            "spouse": "0x2",
+            "gender": "Female",
+            "hometown": "Moratuwa"
+        },
+        {
+            "uid": "0x4",
+            "family_id": "0x1",
+            "name": "Lakshan Bandara",
+            "date_of_birth": "1994-03-19",
+            "profession": "Doctor",
+            "parents": {
+                "father": "0x2",
+                "mother": "0x3"
+            },
+            "deceased": false,
+            "children": [],
+            "spouse": null,
+            "gender": "Female",
+            "hometown": "Moratuwa"
+        },
+        {
+            "uid": "0x5",
+            "family_id": "0x1",
+            "name": "Imashi Bandara",
+            "date_of_birth": "1996-06-23",
+            "profession": "Student",
+            "parents": {
+                "father": "0x2",
+                "mother": "0x3"
+            },
+            "deceased": false,
+            "children": [],
+            "spouse": null,
+            "gender": "Male",
+            "hometown": "Gampaha"
+        }
+    ]
+}
