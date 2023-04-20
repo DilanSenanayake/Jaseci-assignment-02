@@ -37,7 +37,7 @@ walker create_familytree {
                 parents = member["parents"],
                 children = member["children"],
                 spouse = member["spouse"],
-                weight = member["weight"]
+                weight = member["weight"],
                 height = member["height"]
 
                 

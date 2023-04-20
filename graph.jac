@@ -21,7 +21,7 @@ node person {
     
 
     can get_BMI{
-        BMI = weight/(height*height)
+        BMI = weight/(height*height);
     }
     
 
