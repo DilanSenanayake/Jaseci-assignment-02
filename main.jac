@@ -37,7 +37,8 @@ walker create_familytree {
                 parents = member["parents"],
                 children = member["children"],
                 spouse = member["spouse"],
-                hometown = member["hometown"]
+                weight = member["weight"]
+                height = member["height"]
             );
             famly_members.list::append(family_member);
         }
@@ -60,22 +61,19 @@ walker create_familytree {
 
 walker find_BMI_value {
 
-    has anchor busList = [];
+    has anchor BMIlist = [];
 
     root: take-->node::family_root;
     family_root: take-->node::person;
 
     person {
-        if (!here.deceased) {
-            here::get_BMI;
-            busList.l::append([here.bus, here.name]);
-            }
-            
+        here::get_BMI;
+        BMIlist.l::append([here.BMI, here.name]);         
         }
 
     with exit {
-        std.out(busList);
-        report busList;
+        std.out(BMIlist);
+        report BMIlist;
     }
 
 }
