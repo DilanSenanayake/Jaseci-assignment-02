@@ -39,6 +39,9 @@ walker create_familytree {
                 spouse = member["spouse"],
                 weight = member["weight"]
                 height = member["height"]
+
+                
+
             );
             famly_members.list::append(family_member);
         }
@@ -59,6 +62,7 @@ walker create_familytree {
 
 
 
+
 walker find_BMI_value {
 
     has anchor BMIlist = [];
@@ -75,5 +79,6 @@ walker find_BMI_value {
         std.out(BMIlist);
         report BMIlist;
     }
+
 
 }

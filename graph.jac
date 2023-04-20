@@ -20,11 +20,11 @@ node person {
     has BMI;
     
 
-
     can get_BMI{
         BMI = weight/(height*height)
     }
     
+
 }
 node family_root {
     has id;
